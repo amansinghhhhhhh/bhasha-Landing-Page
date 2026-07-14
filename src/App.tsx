@@ -103,7 +103,10 @@ export default function App() {
         <Testimonials />
 
         {/* FAQ SECTION (18 DETAILED QUESTIONS) */}
-        <FAQ onWhatsAppClick={handleWhatsAppRedirect} />
+        <FAQ
+          onApplyClick={handleApplyNow}
+          onWhatsAppClick={handleWhatsAppRedirect}
+        />
 
         {/* FINAL CALL TO ACTION BANNER */}
         <FinalCTA
