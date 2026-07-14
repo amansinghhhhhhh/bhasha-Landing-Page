@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Remix: Bhasha World",
+  "description": "Premium high-converting landing page for Bhasha World. ISO-certified language training for students and professionals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
