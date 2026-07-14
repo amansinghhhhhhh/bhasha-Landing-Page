@@ -88,7 +88,7 @@ export default function App() {
         <WhatIsBhasha />
 
         {/* WHY CHOOSE US (8 PREMIUM CARDS) */}
-        <WhyChooseUs />
+        <WhyChooseUs onApplyClick={handleApplyNow} />
 
         {/* LANGUAGES WE OFFER SECTION */}
         <LanguagesOffer onLanguageSelect={handleLanguageSelect} activeLang={activeLang} />

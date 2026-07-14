@@ -1,8 +1,16 @@
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { REASONS_TO_CHOOSE } from '../types';
 
-export default function WhyChooseUs() {
+interface WhyChooseUsProps {
+  onApplyClick?: () => void;
+}
+
+export default function WhyChooseUs({ onApplyClick }: WhyChooseUsProps) {
   const scrollToForm = () => {
+    if (onApplyClick) {
+      onApplyClick();
+      return;
+    }
     const formElement = document.getElementById('enquiry-form-container');
     if (formElement) {
       formElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
