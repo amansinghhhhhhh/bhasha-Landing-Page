@@ -13,7 +13,7 @@ export default function SuccessModal({ lead, onClose }: SuccessModalProps) {
     const text = encodeURIComponent(
       `Hello Bhasha World! I just submitted an enquiry for the free demo slot.\n\n*My Details:*\n• Name: ${lead.name}\n• Interested Language: ${lead.interestedLanguage}\n• Mode: ${lead.preferredMode}\n• Email: ${lead.email}\n• Phone: ${lead.phone}\n• Inquiry ID: #${lead.id}\n\nPlease guide me on the next steps!`
     );
-    window.open(`https://wa.me/919876543210?text=${text}`, '_blank');
+    window.open(`https://wa.me/919158397363?text=${text}`, '_blank');
   };
 
   const downloadReceipt = () => {
@@ -34,7 +34,7 @@ Status           : ISO-Certified Registered Slot
 Thank you for enrolling in Bhasha World!
 A Language Advisor will reach out to you within
 2 hours. For instant support, WhatsApp us at:
-https://wa.me/919876543210
+https://wa.me/919158397363
 ========================================
     `;
     const blob = new Blob([content], { type: 'text/plain' });

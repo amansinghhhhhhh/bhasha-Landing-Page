@@ -44,7 +44,7 @@ export default function WhatIsBhasha() {
                   const text = encodeURIComponent(
                     `Hello Bhasha World! I am interested in learning a language with you. Please share details of your small batches and pricing plans.`
                   );
-                  window.open(`https://wa.me/919876543210?text=${text}`, '_blank');
+                  window.open(`https://wa.me/919158397363?text=${text}`, '_blank');
                 }}
                 className="inline-flex items-center justify-center space-x-3 px-8 py-4 bg-[#25D366] hover:bg-[#1ebd59] text-white font-bold rounded-2xl shadow-lg shadow-[#25D366]/20 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
               >

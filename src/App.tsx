@@ -33,7 +33,7 @@ export default function App() {
     const text = encodeURIComponent(
       `Hello Bhasha World! I am interested in learning a language with you. Please share details of your small batches and pricing plans.`
     );
-    window.open(`https://wa.me/919876543210?text=${text}`, '_blank');
+    window.open(`https://wa.me/919158397363?text=${text}`, '_blank');
   };
 
   const handleCallRedirect = () => {
@@ -179,7 +179,7 @@ export default function App() {
                 <div className="flex items-center justify-between pt-1">
                   <span className="text-xs text-slate-400">Helpline</span>
                   <a
-                    href="tel:+919876543210"
+                    href="tel:+919158397363"
                     className="text-lg font-bold text-primary font-mono hover:underline"
                   >
                     +91 98765 43210
@@ -189,7 +189,7 @@ export default function App() {
 
               <div className="pt-4 flex flex-col space-y-3">
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+919158397363"
                   className="bg-primary hover:bg-[#0D3B66]/90 text-white font-bold py-3.5 rounded-xl flex items-center justify-center space-x-2 shadow-md transition-all cursor-pointer"
                 >
                   <Phone className="w-4 h-4" />
