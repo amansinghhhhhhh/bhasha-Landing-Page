@@ -1,6 +1,6 @@
 RewriteEngine On
-RewriteBase /language-courses-new/
+RewriteBase /
 RewriteRule ^index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /language-courses-new/index.html [L]
+RewriteRule . /index.html [L]

@@ -115,28 +115,28 @@ export const TEAM_MEMBERS: TeamMember[] = [
   {
     name: 'Susmita Paranjape',
     role: 'Seniors Executive',
-    image: '/language-courses-new/images/Susmita-Paranjape.webp',
+    image: '/images/Susmita-Paranjape.webp',
     certification: 'Certified Senior Executive Trainer',
     languages: ['German', 'English']
   },
   {
     name: 'Shivani Doshi',
     role: 'Senior Coordinator',
-    image: '/language-courses-new/images/Shivani-Doshi.webp',
+    image: '/images/Shivani-Doshi.webp',
     certification: 'C1 Certified Language Instructor',
     languages: ['Japanese', 'French', 'English']
   },
   {
     name: 'Yojana L.',
     role: 'Junior Coordinator',
-    image: '/language-courses-new/images/IMG_8537.webp',
+    image: '/images/IMG_8537.webp',
     certification: 'N2 Japanese Certified Specialist',
     languages: ['Japanese', 'English', 'Hindi']
   },
   {
     name: 'Mamata D.',
     role: 'Junior Coordinator',
-    image: '/language-courses-new/images/IMG_8535.webp',
+    image: '/images/IMG_8535.webp',
     certification: 'DELF French Certified Specialist',
     languages: ['French', 'Spanish', 'Marathi']
   }
