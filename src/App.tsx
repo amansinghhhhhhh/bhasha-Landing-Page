@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import TrustStrip from './components/TrustStrip';
 import WhatIsBhasha from './components/WhatIsBhasha';
 import WhyChooseUs from './components/WhyChooseUs';
 import LanguagesOffer from './components/LanguagesOffer';
@@ -84,9 +83,6 @@ export default function App() {
           onWhatsAppClick={handleWhatsAppRedirect}
           onLanguageSelect={handleLanguageSelect}
         />
-
-        {/* TRUST STRIP ACCREDITATIONS */}
-        <TrustStrip />
 
         {/* WHAT IS BHASHA WORLD SECTION */}
         <WhatIsBhasha />
