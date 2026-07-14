@@ -182,7 +182,7 @@ export default function App() {
                     href="tel:+919158397363"
                     className="text-lg font-bold text-primary font-mono hover:underline"
                   >
-                    +91 98765 43210
+                    +91 91583 97363
                   </a>
                 </div>
               </div>
