@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Youtube, Linkedin, Twitter, Phone, Mail, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Youtube, Phone, Mail, MapPin } from 'lucide-react';
 // @ts-ignore
 import logoUrl from '../assets/images/bhasa_logo.webp';
 
@@ -57,10 +57,10 @@ export default function Footer({ onApplyClick }: FooterProps) {
               Learn Languages at Any Age. Start Today.
             </p>
 
-            {/* Social Media Circular Buttons with High-Quality Hover Transitions */}
+            {/* Social Media Links */}
             <div className="flex items-center space-x-3 pt-2">
               <a 
-                href="https://facebook.com" 
+                href="https://www.facebook.com/foreignlanguageinstitute" 
                 target="_blank" 
                 rel="noreferrer" 
                 className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-[#1877F2] hover:border-[#1877F2] hover:scale-110 hover:-translate-y-0.5 shadow-md hover:shadow-[#1877F2]/30 transition-all duration-300"
@@ -68,7 +68,7 @@ export default function Footer({ onApplyClick }: FooterProps) {
                 <Facebook className="w-5 h-5 fill-current" />
               </a>
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/bhasha_world/" 
                 target="_blank" 
                 rel="noreferrer" 
                 className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-[#E4405F] hover:border-[#E4405F] hover:scale-110 hover:-translate-y-0.5 shadow-md hover:shadow-[#E4405F]/30 transition-all duration-300"
@@ -76,28 +76,12 @@ export default function Footer({ onApplyClick }: FooterProps) {
                 <Instagram className="w-5 h-5" />
               </a>
               <a 
-                href="https://youtube.com" 
+                href="https://www.youtube.com/@BHASHAWorldLS" 
                 target="_blank" 
                 rel="noreferrer" 
                 className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-[#FF0000] hover:border-[#FF0000] hover:scale-110 hover:-translate-y-0.5 shadow-md hover:shadow-[#FF0000]/30 transition-all duration-300"
               >
                 <Youtube className="w-5 h-5" />
-              </a>
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
-                rel="noreferrer" 
-                className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-[#0A66C2] hover:border-[#0A66C2] hover:scale-110 hover:-translate-y-0.5 shadow-md hover:shadow-[#0A66C2]/30 transition-all duration-300"
-              >
-                <Linkedin className="w-5 h-5 fill-current" />
-              </a>
-              <a 
-                href="https://twitter.com" 
-                target="_blank" 
-                rel="noreferrer" 
-                className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-[#000000] hover:border-[#000000] hover:scale-110 hover:-translate-y-0.5 shadow-md hover:shadow-black/30 transition-all duration-300"
-              >
-                <Twitter className="w-5 h-5 fill-current" />
               </a>
             </div>
           </div>
@@ -197,12 +181,7 @@ export default function Footer({ onApplyClick }: FooterProps) {
             © {currentYear} Bhasha World | Designed & Crafted By A2 Digital
           </p>
 
-          {/* Right links */}
-          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
-            <span className="hover:text-white/80 cursor-pointer transition-colors">Terms of service</span>
-            <span>|</span>
-            <span className="hover:text-white/80 cursor-pointer transition-colors">Privacy policy</span>
-          </div>
+
 
         </div>
 
