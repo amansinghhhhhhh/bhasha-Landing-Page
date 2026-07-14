@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 import { ChevronLeft, ChevronRight, Play, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -225,36 +225,49 @@ export default function Testimonials() {
                 <X className="w-5 h-5" />
               </button>
 
-              {/* Universal Video Embed (Supports YouTube and Vimeo) */}
-              <iframe
-                className="w-full h-full relative z-10 animate-fade-in"
-                src={(() => {
-                  const url = playingVideo;
-                  if (url.includes('vimeo.com')) {
-                    if (url.includes('player.vimeo.com')) {
-                      return `${url}?autoplay=1&muted=0&badge=0&autopause=0`;
-                    }
-                    const match = url.match(/vimeo\.com\/(\d+)/);
-                    if (match) {
-                      return `https://player.vimeo.com/video/${match[1]}?autoplay=1&muted=0&badge=0&autopause=0`;
-                    }
-                  }
-                  if (url.includes('youtube.com') || url.includes('youtu.be')) {
-                    if (url.includes('embed/')) {
-                      return `${url}?autoplay=1&mute=0&controls=1&rel=0`;
-                    }
-                    const match = url.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/);
-                    if (match) {
-                      return `https://www.youtube.com/embed/${match[1]}?autoplay=1&mute=0&controls=1&rel=0`;
-                    }
-                  }
-                  return url;
-                })()}
-                title="Bhasha World Success Video Testimonial"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
+              {/* Video Player - Supports YouTube, Vimeo, and direct MP4 */}
+              {(() => {
+                const url = playingVideo;
+                if (url.includes('vimeo.com')) {
+                  const src = url.includes('player.vimeo.com')
+                    ? `${url}?autoplay=1&muted=0&badge=0&autopause=0`
+                    : `https://player.vimeo.com/video/${url.match(/vimeo\.com\/(\d+)/)?.[1]}?autoplay=1&muted=0&badge=0&autopause=0`;
+                  return (
+                    <iframe
+                      className="w-full h-full relative z-10 animate-fade-in"
+                      src={src}
+                      title="Bhasha World Success Video Testimonial"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    />
+                  );
+                }
+                if (url.includes('youtube.com') || url.includes('youtu.be')) {
+                  const src = url.includes('embed/')
+                    ? `${url}?autoplay=1&mute=0&controls=1&rel=0`
+                    : `https://www.youtube.com/embed/${url.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/)?.[1]}?autoplay=1&mute=0&controls=1&rel=0`;
+                  return (
+                    <iframe
+                      className="w-full h-full relative z-10 animate-fade-in"
+                      src={src}
+                      title="Bhasha World Success Video Testimonial"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    />
+                  );
+                }
+                return (
+                  <video
+                    className="w-full h-full relative z-10 animate-fade-in"
+                    src={url}
+                    controls
+                    autoPlay
+                    playsInline
+                  />
+                );
+              })()}
             </motion.div>
           </motion.div>
         )}
