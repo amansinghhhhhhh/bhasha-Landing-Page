@@ -1,5 +1,7 @@
 import { Globe, Briefcase, BookOpen, TrendingUp, ArrowRight } from 'lucide-react';
 
+const BASE = import.meta.env.BASE_URL;
+
 export default function WhoIsItFor() {
   const scrollToForm = () => {
     const formElement = document.getElementById('enquiry-form-container');
@@ -12,25 +14,25 @@ export default function WhoIsItFor() {
     {
       title: 'Culture Enthusiasts',
       description: 'Anyone exploring Global culture & communication.',
-      image: '/images/indian_culture_enthusiast_1783949148707.jpg',
+      image: `${BASE}images/indian_culture_enthusiast_1783949148707.jpg`,
       icon: Globe,
     },
     {
       title: 'Working Professionals',
       description: 'Professionals working with multilingual clients or global companies.',
-      image: '/images/indian_working_professional_1783949166271.jpg',
+      image: `${BASE}images/indian_working_professional_1783949166271.jpg`,
       icon: Briefcase,
     },
     {
       title: 'Exam Aspirants',
       description: 'Students preparing for Goethe/TELC proficiency exams.',
-      image: '/images/indian_exam_aspirant_1783949182286.jpg',
+      image: `${BASE}images/indian_exam_aspirant_1783949182286.jpg`,
       icon: BookOpen,
     },
     {
       title: 'Career Upskillers',
       description: 'Anyone looking to enhance their career with a valuable language skill.',
-      image: '/images/indian_career_upskiller_1783949197564.jpg',
+      image: `${BASE}images/indian_career_upskiller_1783949197564.jpg`,
       icon: TrendingUp,
     }
   ];

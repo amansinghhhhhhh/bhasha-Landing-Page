@@ -111,32 +111,34 @@ export const REASONS_TO_CHOOSE: { title: string; desc: string; icon: string }[] 
   }
 ];
 
+const _BASE = (typeof import.meta !== 'undefined' && import.meta.env?.BASE_URL) || '/';
+
 export const TEAM_MEMBERS: TeamMember[] = [
   {
     name: 'Susmita Paranjape',
     role: 'Seniors Executive',
-    image: '/images/Susmita-Paranjape.webp',
+    image: `${_BASE}images/Susmita-Paranjape.webp`,
     certification: 'Certified Senior Executive Trainer',
     languages: ['German', 'English']
   },
   {
     name: 'Shivani Doshi',
     role: 'Senior Coordinator',
-    image: '/images/Shivani-Doshi.webp',
+    image: `${_BASE}images/Shivani-Doshi.webp`,
     certification: 'C1 Certified Language Instructor',
     languages: ['Japanese', 'French', 'English']
   },
   {
     name: 'Yojana L.',
     role: 'Junior Coordinator',
-    image: '/images/IMG_8537.webp',
+    image: `${_BASE}images/IMG_8537.webp`,
     certification: 'N2 Japanese Certified Specialist',
     languages: ['Japanese', 'English', 'Hindi']
   },
   {
     name: 'Mamata D.',
     role: 'Junior Coordinator',
-    image: '/images/IMG_8535.webp',
+    image: `${_BASE}images/IMG_8535.webp`,
     certification: 'DELF French Certified Specialist',
     languages: ['French', 'Spanish', 'Marathi']
   }

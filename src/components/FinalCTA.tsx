@@ -1,6 +1,6 @@
 import { ArrowRight, MessageSquare } from 'lucide-react';
 
-const CTA_IMAGE_PATH = '/images/regenerated_image_1783941713921.png';
+const CTA_IMAGE_PATH = `${import.meta.env.BASE_URL}images/regenerated_image_1783941713921.png`;
 
 interface FinalCTAProps {
   onApplyClick: () => void;
